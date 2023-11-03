@@ -23,7 +23,7 @@ export default class FlexDashboardPlugin extends FlexPlugin {
     
     const { roles } = manager.user;
     
-    if (roles.indexOf('admin') >= 0 && manager?.workerClient?.attributes?.agent_lead == true) {
+    if (roles.indexOf('supervisor') >= 0 && manager?.workerClient?.attributes?.agent_lead == true) {
       // Remove Profile (Agent Activity Select)
       Flex.WorkerCanvas.Content.remove('profile');
       // Remove Skills Caption and Workerskills
