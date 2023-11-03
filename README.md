@@ -9,9 +9,9 @@ twilio flex:plugins:create flex-dashboard-plugin --install --flexui2 --typescrip
 ```
 
 ## Feature Summary
-This plugin includes a customization to allow Flex [Supervisor Users]((https://www.twilio.com/docs/flex/onboarding-guide/set-up-your-flex-account#flex-user-roles)) with reduced (view only) permissions to see the Teams View but not make any changes to the agent activity or update their skills.
+This plugin includes a customization to allow Flex [Supervisor Users](https://www.twilio.com/docs/flex/onboarding-guide/set-up-your-flex-account#flex-user-roles) with reduced (view only) permissions to see the Teams View but not make any changes to the agent activity or update their [skills](https://www.twilio.com/docs/flex/onboarding-guide/configure-skill-based-routing#assign-a-skill-to-an-agent).
 
-For any user with the Supervisor role and the worker attribute `agent_lead = true`, we will remove the Profile component (Activity select) and [Skills components](https://www.twilio.com/docs/flex/onboarding-guide/configure-skill-based-routing#assign-a-skill-to-an-agent) from the [Worker Canvas](https://assets.flex.twilio.com/docs/releases/flex-ui/2.4.1/programmable-components/components/WorkerCanvas/).
+For any user with the Supervisor role and the worker attribute `agent_lead = true`, we will remove the Profile component (Activity select) and [Skills components](https://assets.flex.twilio.com/docs/releases/flex-ui/2.4.1/programmable-components/components/WorkerSkills/) from the [Worker Canvas](https://assets.flex.twilio.com/docs/releases/flex-ui/2.4.1/programmable-components/components/WorkerCanvas/).
 
 
 
